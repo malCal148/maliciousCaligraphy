@@ -20,6 +20,7 @@
 
   
 .products {
+    margin: 0 3%;
     border:1px solid lawngreen;
     display: flex;
     flex-wrap: wrap;

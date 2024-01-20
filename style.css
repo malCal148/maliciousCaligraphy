@@ -1,8 +1,12 @@
 :root
 {
+    /*Fonts*/
     --mainFont: 'Poppins', sans-serif;
     --titleWeight:800;
     --normalWeight:300;
+
+    /*colors*/
+    --mainFontColor:black;
 
 }
 
@@ -10,6 +14,9 @@ body
 {
     font-family: var(--mainFont);
     font-weight: var(--normalWeight);
+    color:var(--mainFontColor);
+    padding:0;
+    margin:0;
 }
 
 h1
@@ -18,18 +25,26 @@ h1
     font-weight: var(--titleWeight);
 }
 
+h4
+{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+}
+
 p
 {
     font-family: var(--mainFont);
     font-weight: var(--normalWeight);
 }
 
+section
+{
+    margin: 1% 0px;
+}
+
 .shelfContainer
 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
+    margin: 2% 0px;
 }
 
 .item
@@ -43,8 +58,9 @@ footer{
     background-color:black;
     color:white;
     float:left;
-    width:100%;
-    padding:3.3%;
+    min-width: 94%;
+    max-width:94%;
+    padding:3%;
     font-family: var(--mainFont);
     font-weight: var(--titleWeight);
     /*this is just pi because I was bored*/
