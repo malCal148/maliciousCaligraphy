@@ -1,0 +1,51 @@
+:root
+{
+    --mainFont: 'Poppins', sans-serif;
+    --titleWeight:800;
+    --normalWeight:300;
+
+}
+
+body
+{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+}
+
+h1
+{
+    font-family: var(--mainFont);
+    font-weight: var(--titleWeight);
+}
+
+p
+{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+}
+
+.shelfContainer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.item
+{
+    flex-grow: 1;
+    /*All even*/
+}
+
+footer{
+    display: block;
+    background-color:black;
+    color:white;
+    float:left;
+    width:100%;
+    padding:3.3%;
+    font-family: var(--mainFont);
+    font-weight: var(--titleWeight);
+    /*this is just pi because I was bored*/
+    }
