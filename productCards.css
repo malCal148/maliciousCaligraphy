@@ -1,8 +1,9 @@
 .product-filter {
   display: flex;
   align-items: center;
-  border:1px solid red;
   padding: 2%;
+  border-bottom: 3px dashed #1c0f13ff;
+
 }
 
 .product-filter h1 {
@@ -11,6 +12,7 @@
 
 .sort {
   display: flex;
+
 }
 
 .collection-sort {
@@ -21,7 +23,6 @@
   
 .products {
     margin: 0 3%;
-    border:1px solid lawngreen;
     display: flex;
     flex-wrap: wrap;
 }
