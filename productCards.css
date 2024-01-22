@@ -41,6 +41,15 @@
     max-width: 100%;
 }
 
+.buyButton
+{
+  text-align: center;
+  margin:2% 25%;
+  /*This roughly centers it
+  WHY THE FUCK IS CENTERING SOMETHING SO 
+  FUCKING DIFFICULT*/
+}
+
 @media (max-width: 920px) {
   .product-card {
     flex: 1 21%;

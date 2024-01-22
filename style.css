@@ -1,12 +1,27 @@
 :root
 {
+    /*colour importing*/
+        /* CSS HEX */
+        --licorice: #1c0f13ff;
+        --white: #ffffffff;
+        --gold: #ffd400ff;
+        --chefchaouen-blue: #4392f1ff;
+        --slate-blue: #735cddff;
+
+        /*Gradient*/
+        
     /*Fonts*/
     --mainFont: 'Poppins', sans-serif;
     --titleWeight:800;
     --normalWeight:300;
 
     /*colors*/
-    --mainFontColor:black;
+    --mainFontColor:var(--licorice);
+    --mainBackgroundColor:var(--white);
+    --accent1:var(--gold);
+    --accent2:var(--chefchaouen-blue);
+    --accent3:var(--slate-blue);
+
 
 }
 
@@ -17,6 +32,16 @@ body
     color:var(--mainFontColor);
     padding:0;
     margin:0;
+}
+
+.accent1
+{
+    color:var(--accent1);
+}
+
+.accent2
+{
+    color:var(--accent2);
 }
 
 h1
@@ -47,13 +72,9 @@ section
     margin: 2% 0px;
 }
 
-.item
+footer
 {
-    flex-grow: 1;
-    /*All even*/
-}
-
-footer{
+    margin-top: 2%;
     display: block;
     background-color:black;
     color:white;
@@ -63,5 +84,30 @@ footer{
     padding:3%;
     font-family: var(--mainFont);
     font-weight: var(--titleWeight);
-    /*this is just pi because I was bored*/
-    }
+}
+
+footer .miniNav
+{
+    display: flexbox;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+footer a
+{
+    color:var(--accent1);
+    flex-grow: 1;
+    margin: 2%;
+    
+}
+
+footer a.active
+{
+    color:var(--accent2);
+}
+
+footer a:hover
+{
+    color:var(--accent3);
+}
