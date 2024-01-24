@@ -131,3 +131,25 @@ footer a:hover
 {
     color:var(--accent3);
 }
+
+@media (max-width: 920px) {
+    #logo {
+        font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+  
+      .sort {
+      align-self: flex-start;
+    }
+  }
