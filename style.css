@@ -12,6 +12,7 @@
         
     /*Fonts*/
     --mainFont: 'Poppins', sans-serif;
+    --otherFont:'Raleway', sans-serif;
     --titleWeight:800;
     --normalWeight:300;
 
@@ -39,6 +40,19 @@ body
     margin:0;
 
     
+}
+
+p{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+    color: var(--mainFontColor);
+}
+
+.content{
+    padding: 2%;
+
+    column-count: 3;
+    column-gap: 2%;
 }
 
 .accent1
@@ -136,11 +150,19 @@ footer a:hover
     #logo {
         font-size: 1em;
     }
+
+    .content{
+        column-count: 2;
+    }
   }
   
   @media (max-width: 600px) {
     .product-card {
       flex: 1 46%;
+    }
+
+    .content{
+        column-count: 1;
     }
   }
   
@@ -151,5 +173,9 @@ footer a:hover
   
       .sort {
       align-self: flex-start;
+    }
+
+    .content{
+        column-count: 1;
     }
   }

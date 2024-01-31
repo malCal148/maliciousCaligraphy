@@ -54,12 +54,14 @@
 @media (max-width: 920px) {
   .product-card {
     flex: 1 21%;
+    border-radius: 5%;
   }
 }
 
 @media (max-width: 600px) {
   .product-card {
     flex: 1 46%;
+    border-radius: 30%;
   }
 }
 
