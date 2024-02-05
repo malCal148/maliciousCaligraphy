@@ -72,6 +72,25 @@ h1
 }
 
 
+#topNav
+{
+    display: flex;
+    width: 100%;   
+    font-family: var(--mainFont);
+    font-weight: var(--titleWeight);
+    background-color: var(--mainBackgroundColor);
+}
+
+#topNav a {
+    border: 3px dashed var(--mainFontColor);
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
 h4
 {
     font-family: var(--mainFont);
@@ -128,7 +147,7 @@ footer .miniNav
 
 }
 
-footer a
+a
 {
     color:var(--accent1);
     flex-grow: 1;
@@ -136,12 +155,12 @@ footer a
     
 }
 
-footer a.active
+a.active
 {
     color:var(--accent2);
 }
 
-footer a:hover
+a:hover
 {
     color:var(--accent3);
 }

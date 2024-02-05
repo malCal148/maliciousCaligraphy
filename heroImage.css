@@ -10,16 +10,33 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/ url("images/tshirtDesigns/EyeShatMyPants.png");
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/ url("images/tshirtDesigns/gryinn.png");
 
   /* Set a specific height */
-  height: 50%;
+  height: 60%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
+  align-items: center;  
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding:3%;
+}
+
+@media (max-width:920px) {
+
+  .hero-image{  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/ url("images/tshirtDesigns/EyeShatMyPants.png");
+    height:50%;
+  }
+
+  .hero-text{
+    display: none;
+  }
+
+  .hero-text h1{
+    display: none;
+  }
 }
 
 /* Place text in the middle of the image */
@@ -28,6 +45,21 @@ body, html {
   text-align: center;
   top: 40%;
   position: relative;
-  transform: translateY(-50% ,-50%);
   color: white;
+}
+
+li a{
+  padding: 3%;
+}
+
+/* Style the links inside the navigation bar */
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
