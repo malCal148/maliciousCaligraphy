@@ -173,6 +173,9 @@ a:hover
     .content{
         column-count: 2;
     }
+
+    .topNav
+     {width:50%}
   }
   
   @media (max-width: 600px) {
