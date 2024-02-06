@@ -32,7 +32,7 @@
     flex basis - the size it should be*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     flex: 1 16%;
-
+    overflow: hidden;
     text-align: center;
     border-radius: 10%;
     margin:1%;
