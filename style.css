@@ -128,7 +128,7 @@ footer
 {
     margin-top: 2%;
     display: block;
-    background-color:black;
+    background-color:var(--mainFontColor);
     color:white;
     float:left;
     min-width: 94%;
