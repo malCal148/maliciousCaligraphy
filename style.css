@@ -75,6 +75,7 @@ h1
 #topNav
 {
     display: flex;
+    justify-content:flex-start;
     width: 100%;   
     font-family: var(--mainFont);
     font-weight: var(--titleWeight);
@@ -84,8 +85,8 @@ h1
 #topNav a {
     float: left;
     text-align: center;
-    padding: 2% 3%;
     text-decoration: none;
+    margin:1% 2%;
   }
 
 
@@ -156,11 +157,6 @@ a
 a.active
 {
     color:var(--accent2);
-}
-
-#topNav a.active
-{
-    background-color:var(--mainBackgroundColor);
 }
 
 a:hover
