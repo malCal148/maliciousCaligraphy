@@ -78,7 +78,7 @@ h1
     width: 100%;   
     font-family: var(--mainFont);
     font-weight: var(--titleWeight);
-    background-color: var(--accent1);
+    background-color:var(--mainFontColor);
 }
 
 #topNav a {
