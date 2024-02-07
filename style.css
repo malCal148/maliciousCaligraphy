@@ -158,6 +158,11 @@ a.active
     color:var(--accent2);
 }
 
+#topNav a.active
+{
+    background-color:var(--mainBackgroundColor);
+}
+
 a:hover
 {
     color:var(--accent3);
