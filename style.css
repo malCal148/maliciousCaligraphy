@@ -2,7 +2,7 @@
 {
     /*colour importing*/
         /* CSS HEX */
-        --licorice: #1c0f13ff;
+        --black: #000;
         --white: #ffffffff;
         --gold: #ffd400ff;
         --chefchaouen-blue: #4392f1ff;
@@ -17,7 +17,7 @@
     --normalWeight:300;
 
     /*colors*/
-    --mainFontColor:var(--licorice);
+    --mainFontColor:var(--black);
     --mainBackgroundColor:var(--white);
     --accent1:var(--gold);
     --accent2:var(--chefchaouen-blue);
@@ -41,6 +41,7 @@ body
 
     
 }
+
 
 p{
     font-family: var(--mainFont);
@@ -71,25 +72,6 @@ h1
     font-weight: var(--titleWeight);
 }
 
-
-#topNav
-{
-    display: flex;
-    justify-content:flex-start;
-    width: 100%;   
-    font-family: var(--mainFont);
-    font-weight: var(--titleWeight);
-    background-color:var(--mainFontColor);
-}
-
-#topNav a {
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    margin:1% 2%;
-  }
-
-
 h4
 {
     font-family: var(--mainFont);
@@ -102,10 +84,7 @@ p
     font-weight: var(--normalWeight);
 }
 
-section
-{
-    margin: 1% 0px;
-}
+
 
 .top {
     display: flex;
@@ -144,14 +123,6 @@ footer .miniNav
     width: 50%;
     flex-wrap: wrap;
 
-}
-
-a
-{
-    color:var(--accent1);
-    flex-grow: 1;
-    margin: 2%;
-    
 }
 
 a.active
