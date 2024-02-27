@@ -49,17 +49,14 @@
         <a href="aboutUs.html">About</a>
         <a href="allProducts.html">All Products</a>
       </nav>
-
-
-    <section class="shelfContainer">
-        <div class="top">
-          <h1 id = "aboutUs">All Products</h1>
-      </div>
-          <div class="shelfContainer">
-            <nav class="product-filter">
+<!-- _________________________________________________ALL PRODUCTS-->
+          
+<div class="shelfContainer">
+<nav class="product-filter">
                 <h1>Shirts</h1>    
-            </div>
               </nav>      
+                </div>        
+              
               <section class="products">            
                 <!-- bandage eyes -->
                   <div class="product-card">
@@ -284,7 +281,6 @@
                     /*]]>*/
                     </script>
                   </div>        
-        
                   <!-- Cloudy eyes -->
                   <div class="product-card">
                     <div class="product-image">
@@ -732,7 +728,7 @@
                     </script>
                   </div>
                 </section>
-                <section class="products">
+              <section class="products">
                   <!-- Lozeau -->
                   <div class="product-card">
                     <div class="product-image">
@@ -956,7 +952,7 @@
         /*]]>*/
         </script>
                   </div>
-                          <!-- Cat -->
+                  <!-- Cat -->
                   <div class="product-card">
                     <div class="product-image">
                     <img src="images/tshirtMockups/catTshirtMockUp.jpg" alt="Murf T shirt">
@@ -1179,11 +1175,10 @@
                     /*]]>*/
                     </script>            
                   </div>
-        
                 <!-- Heleo -->
                   <div class="product-card">
                     <div class="product-image">
-                    <img src="images/tshirtMockups/HeleoTshirtMockUp.jpg" alt="Heleo T shirt">
+                    <img src="images/tshirtMockups/Mals Collection/HeleoTshirtMockUp.jpg" alt="Heleo T shirt">
                   </div>
                     <h5>Heleo T-Shirt</h5>
                     <h6>£14.05</h6>
@@ -1403,19 +1398,17 @@
         /*]]>*/
         </script>
                   </div>
-        
-        
                   </section>
-                <section class="products">
-                       <!-- Grynn -->
-                       <div class="product-card">
-                        <div class="product-image">
-                        <img src="images/tshirtMockups/grynnTshirtMockUp.jpg" alt="Gryinn T shirt">
-                      </div>
-                        <h5>Grynn T shirt</h5>
-                        <h6>£14</h6>
-                        <div class = "buyButton" id='product-component-1707351311629'></div>
-        <script type="text/javascript">
+              <section class="products">
+               <!-- Grynn -->
+               <div class="product-card">
+                <div class="product-image">
+                <img src="images/tshirtMockups/Mals Collection/grynnTshirtMockUp.jpg" alt="Gryinn T shirt">
+              </div>
+                <h5>Grynn T shirt</h5>
+                <h6>£14.00</h6>
+                <div class = "buyButton" id='product-component-1707351311629'></div>
+                <script type="text/javascript">
         /*<![CDATA[*/
         (function () {
           var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -1628,15 +1621,241 @@
           }
         })();
         /*]]>*/
-        </script>
+                </script>
                       </div>     
+                <!-- Toxx -->
+               <div class="product-card">
+                 <div class="product-image">
+                   <!--name of image-->
+                 <img src="images/tshirtMockups/Mals Collection/ToxxTshirtMockUp.jpg" alt="Toxx T shirt">
+               </div>
+                 <h5>Toxx T Shirt</h5>
+                 <h6>£14.00</h6>
+                 <div class = "buyButton" id='product-component-1709074038659'></div>
+                 <script type="text/javascript">
+                 /*<![CDATA[*/
+                 (function () {
+                   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                   if (window.ShopifyBuy) {
+                     if (window.ShopifyBuy.UI) {
+                       ShopifyBuyInit();
+                     } else {
+                       loadScript();
+                     }
+                   } else {
+                     loadScript();
+                   }
+                   function loadScript() {
+                     var script = document.createElement('script');
+                     script.async = true;
+                     script.src = scriptURL;
+                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                     script.onload = ShopifyBuyInit;
+                   }
+                   function ShopifyBuyInit() {
+                     var client = ShopifyBuy.buildClient({
+                       domain: 'a825b0-2.myshopify.com',
+                       storefrontAccessToken: '426b2c76d46678d410d2f683565706ef',
+                     });
+                     ShopifyBuy.UI.onReady(client).then(function (ui) {
+                       ui.createComponent('product', {
+                         id: '8599521067276',
+                         node: document.getElementById('product-component-1709074038659'),
+                         moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                         options: {
+                   "product": {
+                     "styles": {
+                       "product": {
+                         "@media (min-width: 601px)": {
+                           "max-width": "calc(25% - 20px)",
+                           "margin-left": "20px",
+                           "margin-bottom": "50px"
+                         }
+                       },
+                       "title": {
+                         "font-family": "Raleway, sans-serif"
+                       },
+                       "button": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold",
+                         ":hover": {
+                           "background-color": "#301a20"
+                         },
+                         "background-color": "#1c0f13",
+                         ":focus": {
+                           "background-color": "#301a20"
+                         },
+                         "border-radius": "8px",
+                         "padding-left": "20px",
+                         "padding-right": "20px"
+                       },
+                       "price": {
+                         "font-family": "Raleway, sans-serif"
+                       },
+                       "compareAt": {
+                         "font-family": "Raleway, sans-serif"
+                       },
+                       "unitPrice": {
+                         "font-family": "Raleway, sans-serif"
+                       }
+                     },
+                     "contents": {
+                       "img": false,
+                       "title": false,
+                       "price": false
+                     },
+                     "text": {
+                       "button": "Add to cart"
+                     },
+                     "googleFonts": [
+                       "Raleway"
+                     ]
+                   },
+                   "productSet": {
+                     "styles": {
+                       "products": {
+                         "@media (min-width: 601px)": {
+                           "margin-left": "-20px"
+                         }
+                       }
+                     }
+                   },
+                   "modalProduct": {
+                     "contents": {
+                       "img": false,
+                       "imgWithCarousel": true,
+                       "button": false,
+                       "buttonWithQuantity": true
+                     },
+                     "styles": {
+                       "product": {
+                         "@media (min-width: 601px)": {
+                           "max-width": "100%",
+                           "margin-left": "0px",
+                           "margin-bottom": "0px"
+                         }
+                       },
+                       "button": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold",
+                         ":hover": {
+                           "background-color": "#301a20"
+                         },
+                         "background-color": "#1c0f13",
+                         ":focus": {
+                           "background-color": "#301a20"
+                         },
+                         "border-radius": "8px",
+                         "padding-left": "20px",
+                         "padding-right": "20px"
+                       },
+                       "title": {
+                         "font-family": "Helvetica Neue, sans-serif",
+                         "font-weight": "bold",
+                         "font-size": "26px",
+                         "color": "#4c4c4c"
+                       },
+                       "price": {
+                         "font-family": "Helvetica Neue, sans-serif",
+                         "font-weight": "normal",
+                         "font-size": "18px",
+                         "color": "#4c4c4c"
+                       },
+                       "compareAt": {
+                         "font-family": "Helvetica Neue, sans-serif",
+                         "font-weight": "normal",
+                         "font-size": "15.299999999999999px",
+                         "color": "#4c4c4c"
+                       },
+                       "unitPrice": {
+                         "font-family": "Helvetica Neue, sans-serif",
+                         "font-weight": "normal",
+                         "font-size": "15.299999999999999px",
+                         "color": "#4c4c4c"
+                       }
+                     },
+                     "googleFonts": [
+                       "Raleway"
+                     ],
+                     "text": {
+                       "button": "Add to cart"
+                     }
+                   },
+                   "option": {
+                     "styles": {
+                       "label": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold"
+                       },
+                       "select": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold"
+                       }
+                     },
+                     "googleFonts": [
+                       "Raleway"
+                     ]
+                   },
+                   "cart": {
+                     "styles": {
+                       "button": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold",
+                         ":hover": {
+                           "background-color": "#301a20"
+                         },
+                         "background-color": "#1c0f13",
+                         ":focus": {
+                           "background-color": "#301a20"
+                         },
+                         "border-radius": "8px"
+                       }
+                     },
+                     "text": {
+                       "total": "Subtotal",
+                       "empty": "No shirts in the cart",
+                       "button": "Checkout"
+                     },
+                     "popup": false,
+                     "googleFonts": [
+                       "Raleway"
+                     ]
+                   },
+                   "toggle": {
+                     "styles": {
+                       "toggle": {
+                         "font-family": "Raleway, sans-serif",
+                         "font-weight": "bold",
+                         "background-color": "#1c0f13",
+                         ":hover": {
+                           "background-color": "#301a20"
+                         },
+                         ":focus": {
+                           "background-color": "#301a20"
+                         }
+                       }
+                     },
+                     "googleFonts": [
+                       "Raleway"
+                     ]
+                   }
+                 },
+                       });
+                     });
+                   }
+                 })();
+                 /*]]>*/
+                 </script>
+                      </div>        
                 </section>
                   </div>   
               <div class="shelfContainer">
+              <!-- _______________________________HOODIES -->
               <nav class="product-filter">
                 <h1>Hoodies</h1>    
               </nav>
               <section class="products">
+                <!-- Slash Hoodie -->
                 <div class="product-card">
                 <div class="product-image">
                 <img src="images/hoodieMockUps/slashHoodieMockup.png" alt="Malicious Caligraphy's Slash Hoodie">
@@ -1860,6 +2079,7 @@
         /*]]>*/
                 </script>
                 </div>
+                <!-- Heleo Hoodie -->
                 <div class="product-card">
                   <div class="product-image">
                   <img src="images/hoodieMockUps/heleoHoodieMockUp.png" alt="Heleo Hoodie">
@@ -2082,6 +2302,230 @@
                   /*]]>*/
                   </script>
                 </div>
+                <!-- Toxx Hoodie -->
+                <div class="product-card">
+                  <div class="product-image">
+                    <!--name of image-->
+                  <img src="images/tshirtMockups/Mals Collection/ToxxHoodieMockUp.jpg" alt="Toxx hoodie MockUp">
+                </div>
+                  <h5>Toxx Hoodie</h5>
+                  <h6>£35.00</h6>
+                  <div class = "buyButton" id='product-component-1709075002562'></div>
+                  <script type="text/javascript">
+                  /*<![CDATA[*/
+                  (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                      if (window.ShopifyBuy.UI) {
+                        ShopifyBuyInit();
+                      } else {
+                        loadScript();
+                      }
+                    } else {
+                      loadScript();
+                    }
+                    function loadScript() {
+                      var script = document.createElement('script');
+                      script.async = true;
+                      script.src = scriptURL;
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                      script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                      var client = ShopifyBuy.buildClient({
+                        domain: 'a825b0-2.myshopify.com',
+                        storefrontAccessToken: '426b2c76d46678d410d2f683565706ef',
+                      });
+                      ShopifyBuy.UI.onReady(client).then(function (ui) {
+                        ui.createComponent('product', {
+                          id: '8629638889740',
+                          node: document.getElementById('product-component-1709075002562'),
+                          moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                          options: {
+                    "product": {
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "calc(25% - 20px)",
+                            "margin-left": "20px",
+                            "margin-bottom": "50px"
+                          }
+                        },
+                        "title": {
+                          "font-family": "Raleway, sans-serif"
+                        },
+                        "button": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          ":hover": {
+                            "background-color": "#301a20"
+                          },
+                          "background-color": "#1c0f13",
+                          ":focus": {
+                            "background-color": "#301a20"
+                          },
+                          "border-radius": "8px",
+                          "padding-left": "20px",
+                          "padding-right": "20px"
+                        },
+                        "price": {
+                          "font-family": "Raleway, sans-serif"
+                        },
+                        "compareAt": {
+                          "font-family": "Raleway, sans-serif"
+                        },
+                        "unitPrice": {
+                          "font-family": "Raleway, sans-serif"
+                        }
+                      },
+                      "contents": {
+                        "img": false,
+                        "title": false,
+                        "price": false
+                      },
+                      "text": {
+                        "button": "Add to cart"
+                      },
+                      "googleFonts": [
+                        "Raleway"
+                      ]
+                    },
+                    "productSet": {
+                      "styles": {
+                        "products": {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-20px"
+                          }
+                        }
+                      }
+                    },
+                    "modalProduct": {
+                      "contents": {
+                        "img": false,
+                        "imgWithCarousel": true,
+                        "button": false,
+                        "buttonWithQuantity": true
+                      },
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px"
+                          }
+                        },
+                        "button": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          ":hover": {
+                            "background-color": "#301a20"
+                          },
+                          "background-color": "#1c0f13",
+                          ":focus": {
+                            "background-color": "#301a20"
+                          },
+                          "border-radius": "8px",
+                          "padding-left": "20px",
+                          "padding-right": "20px"
+                        },
+                        "title": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "26px",
+                          "color": "#4c4c4c"
+                        },
+                        "price": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "18px",
+                          "color": "#4c4c4c"
+                        },
+                        "compareAt": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "15.299999999999999px",
+                          "color": "#4c4c4c"
+                        },
+                        "unitPrice": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "15.299999999999999px",
+                          "color": "#4c4c4c"
+                        }
+                      },
+                      "googleFonts": [
+                        "Raleway"
+                      ],
+                      "text": {
+                        "button": "Add to cart"
+                      }
+                    },
+                    "option": {
+                      "styles": {
+                        "label": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold"
+                        },
+                        "select": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold"
+                        }
+                      },
+                      "googleFonts": [
+                        "Raleway"
+                      ]
+                    },
+                    "cart": {
+                      "styles": {
+                        "button": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          ":hover": {
+                            "background-color": "#301a20"
+                          },
+                          "background-color": "#1c0f13",
+                          ":focus": {
+                            "background-color": "#301a20"
+                          },
+                          "border-radius": "8px"
+                        }
+                      },
+                      "text": {
+                        "total": "Subtotal",
+                        "empty": "No shirts in the cart",
+                        "button": "Checkout"
+                      },
+                      "popup": false,
+                      "googleFonts": [
+                        "Raleway"
+                      ]
+                    },
+                    "toggle": {
+                      "styles": {
+                        "toggle": {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          "background-color": "#1c0f13",
+                          ":hover": {
+                            "background-color": "#301a20"
+                          },
+                          ":focus": {
+                            "background-color": "#301a20"
+                          }
+                        }
+                      },
+                      "googleFonts": [
+                        "Raleway"
+                      ]
+                    }
+                  },
+                        });
+                      });
+                    }
+                  })();
+                  /*]]>*/
+                  </script>
+                </div>        
             </section>
           </div>
         </section></section>

@@ -1,26 +1,35 @@
-
-/* Style the top navigation bar */
-.topnav {
+.tab-container {
     overflow: hidden;
-    background-color: var(--mainFontColor);
+    background-color: var(--mainFont);
     display: flex;
+    overflow-x: auto; 
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
+  .tab {
     font-family: var(--mainFont);
     font-weight: var(--titleWeight);
     float: left;
     display: block;
-    color: var(--accent1);
+    color: var(--accent3);
     text-align: center;
     padding: 14px 16px;
     flex-grow: 1;
     justify-content: space-between;
     text-decoration: none;
+    flex-wrap: nowrap;
+  }
+
+.tab :active
+  {
+    color: var(--accent1);
   }
   
-  /* Change color on hover */
-  .topnav a:hover {
-    color: var(--accent2);
+  .tab:hover {
+    background-color: #ddd;
   }
+  
+  .collection-content {
+    padding: 20px;
+  }
+
+  
