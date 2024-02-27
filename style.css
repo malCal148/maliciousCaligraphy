@@ -84,7 +84,10 @@ p
     font-weight: var(--normalWeight);
 }
 
-
+.bold
+{
+    font-weight: 800;
+}
 
 .top {
     display: flex;
