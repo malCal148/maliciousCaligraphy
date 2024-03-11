@@ -10,9 +10,10 @@
 
         /*Gradient*/
         
+    --poppins:'Poppins', sans-serif;
     /*Fonts*/
-    --mainFont: 'Poppins', sans-serif;
-    --otherFont:'Raleway', sans-serif;
+    --mainFont: 'Raleway', sans-serif;
+    --otherFont:'Poppins', sans-serif;
     --titleWeight:800;
     --normalWeight:300;
 
@@ -25,6 +26,35 @@
 
 
 }
+
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: var(--mainFontColor);
+    display: flex;
+    font-family: var(--otherFont);
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-weight: var(--titleWeight);
+    float: left;
+    display: block;
+    color: var(--accent1);
+    text-align: center;
+    padding: 14px 16px;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    color: var(--accent2);
+  }
+
 
 html
 {
@@ -116,7 +146,7 @@ footer
     min-width: 94%;
     max-width:94%;
     padding:3%;
-    font-family: var(--mainFont);
+    font-family: var(--otherFont);
     font-weight: var(--titleWeight);
 }
 

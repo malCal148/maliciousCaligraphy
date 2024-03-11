@@ -51,10 +51,31 @@ section
 .buyButton
 {
   text-align: center;
-  margin:2% 25%;
+  margin:3% 25%;
+  background-color: var(--mainFontColor);
+  padding:2% 1%;
+  border-radius: 10px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+
+  color: var(--mainBackgroundColor);
+  text-decoration: none;
+  position: relative;
   /*This roughly centers it
   WHY THE FUCK IS CENTERING SOMETHING SO 
   FUCKING DIFFICULT*/
+}
+
+.buyButton a
+{
+  margin: 0;
+
+  display: block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: white;
+  font-family: var(--otherFont);
+  font-weight: var(--titleWeight);
 }
 
 @media (max-width: 920px) {
